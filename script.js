@@ -22,12 +22,12 @@ function loadComponent(id, file, callback) {
         })
         .catch(error => console.error(`Error al cargar ${file}:`, error));
 }
+// FOOTER
+loadComponent("footer", "footer.html");
 
 // NAVBAR
 loadComponent("navbar", "navbar.html", () => {
 
-    // FOOTER
-    loadComponent("footer", "footer.html");
     // BANNER
     loadComponent("banner", "banner.html");
 
