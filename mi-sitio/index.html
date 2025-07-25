@@ -1,0 +1,107 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mi Sitio Web</title>
+    <link rel="shortcut icon" href="sources/inicio.png">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!-- Aquí se cargará el navbar -->
+    <div id="navbar"></div>
+
+    <!-- Contenido principal -->
+    <main id="main">
+        <!-- Página inicial -->
+        <div id="contentInicio" class="content" style="max-height: 1500px; height: 100%;">
+                <h1 style="margin-right: 2rem;">🎉 Bienvenid@ a mi sitio web 🎉</h1>
+                <p style="text-wrap: balance; text-align: center; padding-left: 1rem; padding-right: 1rem;">(Esta
+ página es un recopilatorio de lo que he aprendido durante el curso de fundamentos de programación con HTML, CSS y JS)</p>
+
+                <ul style="margin-top: 3rem; display: flex; flex-wrap: wrap; width: 100%; justify-content: center;">
+                    <li class="pagPrincipal"><h2>Página principal</h2><ul>
+                        <li><h3>Creación de navbar y footer</h3></li>
+                        <li><h3>Propiedades de CSS básicas</h3></li>
+                        <li><h3>Eventos "click" o "mousemove"</h3></li>
+                        <li><h3>Usar el fetch()</h3></li>
+                    </ul></li>
+                    <li class="sol"><h2>Animación con gradientes</h2><ul>
+                        <li><h3>Gradientes (obviamente)</h3></li>
+                        <li><h3>Transformaciones, transiciones</h3></li>
+                        <li><h3>Overlay y z-index</h3></li>
+                    </ul></li>
+                    <li class="serpiente"><h2>El jueguito de la serpiente</h2><ul>
+                        <li><h3>Cambiar el HTML desde JS</h3></li>
+                        <li><h3>Uso de matrices</h3></li>
+                        <li><h3>Interacción con el teclado</h3></li>
+                        <li><h3>Creación de intervalos</h3></li>
+                    </ul></li>
+                    <li class="calculadora"><h2>Calculadora de Fibonacci</h2><ul>
+                        <li><h3>Uso de arrays</h3></li>
+                        <li><h3>Bucles iterativos</h3></li>
+                        <li><h3>Creación de WebWorkers</h3></li>
+                        <li><h3>Grid y grid-area</h3></li>
+                    </ul></li>
+                </ul>
+        </div>
+
+        <div id="contentAbout" class="content" style="max-height: 0px;"></div>
+
+        <div id="contentServices" class="content" style="max-height: 0px;"></div>
+
+        <!-- No se puede usar fetch() porque sino se romper el JS -->
+        <div id="contentProyectos" class="content" style="max-height: 0px;">
+            <h1>Proyectos hechos a lo largo del curso:</h1>
+            <div class="cartas">
+                <a href="proyectos/Fibonacci/SerieFibonacci.html" rel="noopener noreferrer">
+                    <div class="card" id="fibonacci">
+                        <img src="proyectos/Fibonacci/Contenido/Fibonacci.webp" alt="Imagen de Fibonacci">
+                        <h2>Serie de Fibonacci</h2>
+                        <p>Calcula números astronómicamente grandes usando arrays.</p>
+                    </div>
+                </a>
+
+                <a href="proyectos/Jueguito/jueguitoSerpiente.html" rel="noopener noreferrer">
+                    <div class="card" id="snake">
+                        <img src="proyectos/Jueguito/Cabesa.png" alt="Logo del snake">
+                        <h2>Jueguito del snake</h2>
+                        <p>El típico juego del Nokia en una matriz de JavaScript.</p>
+                    </div>
+                </a>
+
+                <a href="proyectos/Atardecer/AtardecerGradiantes.html" rel="noopener noreferrer">
+                    <div class="card" id="atardecer">  
+                        <img src="proyectos/Atardecer/hermoso-atardecer-colorido.jpg"
+                            alt="Imagen de un atardecer" style="border-radius: 10px; object-fit: cover;">
+                        <h2>Atardecer gradiantes</h2>
+                        <p>Animación del ciclo día-noche hecho solo con css y js.</p>
+                    </div>
+                </a>
+            </div>
+            <p style="text-align: center; margin: 3rem; margin-bottom: 0; text-wrap: balance;">Esta página se actualiza según vayan saliendo más proyectos.
+                Si tiene alguna idea, compátela en el apartado de Contacto arriba a la derecha. 🤗</p>
+        </div>
+
+        <div id="contentContacto" class="content" style="max-height: 0px;"></div>
+    </main>
+
+    <img class="flecha" id="flecha" src="sources/flecha.png"></img>
+
+    <!-- Aquí se cargará el banner -->
+    <div id="banner" class="banner"></div>
+    
+    <!-- Aquí se cargará el footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script>
+        let potencia = 0.8; // La fuerza con la que se apartan las letras
+        let quietas = false;
+    </script>
+    <script src="script.js"></script>
+    <script src="animaciones.js"></script> <!-- Quitar si da lag en la página inicial-->
+</body>
+</html>
