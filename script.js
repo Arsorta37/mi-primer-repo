@@ -62,8 +62,9 @@ loadComponent("navbar", "navbar.html", () => {
                 contacto.classList.remove("subrayado");
                 footer.style.opacity = "0";
                 setTimeout(() => {
-                    loadComponent("footer", "footer.html");
-                    footer.style.opacity = "1";
+                    loadComponent("footer", "footer.html", () => {
+                        footer.style.opacity = "1";
+                    });
                 }, 1000);
             } else {
                 fibo.style.padding = "0rem";
@@ -124,8 +125,9 @@ loadComponent("navbar", "navbar.html", () => {
                 contacto.classList.remove("subrayado");
                 footer.style.opacity = "0";
                 setTimeout(() => {
-                    loadComponent("footer", "footer.html");
-                    footer.style.opacity = "1";
+                    loadComponent("footer", "footer.html", () => {
+                        footer.style.opacity = "1";
+                    });
                 }, 1000);
             } else {
                 fibo.style.padding = "0rem";
@@ -172,8 +174,9 @@ loadComponent("navbar", "navbar.html", () => {
                 contacto.classList.remove("subrayado");
                 footer.style.opacity = "0";
                 setTimeout(() => {
-                    loadComponent("footer", "footer.html");
-                    footer.style.opacity = "1";
+                    loadComponent("footer", "footer.html", () => {
+                        footer.style.opacity = "1";
+                    });
                 }, 1000);
             } else {
                 fibo.style.padding = "0rem";
@@ -222,8 +225,9 @@ loadComponent("navbar", "navbar.html", () => {
                 contacto.classList.remove("subrayado");
                 footer.style.opacity = "0";
                 setTimeout(() => {
-                    loadComponent("footer", "footer.html");
-                    footer.style.opacity = "1";
+                    loadComponent("footer", "footer.html", () => {
+                        footer.style.opacity = "1";
+                    });
                 }, 1000);
             } else {
                 contentAbout.style.maxHeight = "0px";
@@ -287,8 +291,9 @@ loadComponent("navbar", "navbar.html", () => {
             setTimeout(() => {
                 main.style.gridArea = "2 / 1 / 3 / 3";
                 contentContacto.style.maxHeight = "1000px";
-                loadComponent("footer", "footerContacto.html");
-                footer.style.opacity = "1";
+                loadComponent("footer", "footerContacto.html", () => {
+                    footer.style.opacity = "1";
+                });
                 able = true;
             }, 1000);
         }
