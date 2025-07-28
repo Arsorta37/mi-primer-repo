@@ -87,7 +87,7 @@ loadComponent("navbar", "navbar.html", () => {
             able = false;
             quietas = true;
             pagina = "inicio";
-            modo.style.opacity = "0";
+            modo.style.opacity = "1";
             setTimeout(() => {
                 // Se habilitan las letras
                 document.querySelectorAll(".letra").forEach(letra => {
