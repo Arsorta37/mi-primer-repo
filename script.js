@@ -53,6 +53,8 @@ loadComponent("navbar", "navbar.html", () => {
         setTimeout(() => {modo.style.display = "none";}, 1000);
     });
 
+    // Para todos estos enlaces podría haber hecho una función, pero me dió pereza 😅😔
+    
     // Código del los enlaces
     inicio.addEventListener("click", () => {
         if (pagina != "inicio" && able) {
