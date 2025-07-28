@@ -54,8 +54,8 @@ function iniciar() {
     for (let j=0; j < filas; j++) {
       let celda = [document.createElement("div")];
       celda[0].style.gridArea = (j+1) + " / " + (i+1) + " / " + (j+2) + " / " + (i+2);
-      //celda[0].style.height =
-      //celda[0].style.width =
+      //celda[0].style.height =                   HACER EN UN FUTURO
+      //celda[0].style.width =     LO DE CREAR LAS CELDAS SEGÚN EL ANCHO DE LA PANTALLA
       celda[0].classList.add("celda");
       tablero.appendChild(celda[0]);
       celda.push('');
