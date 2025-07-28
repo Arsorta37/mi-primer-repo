@@ -87,7 +87,7 @@ main {
 /* LETRAS */
     .letra {
         display: inline-block;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, color 1s ease;
         will-change: transform;
         white-space: pre;
     }
