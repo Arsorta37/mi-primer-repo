@@ -93,7 +93,7 @@ loadComponent("navbar", "navbar.html", () => {
                 document.querySelectorAll(".letra").forEach(letra => {
                     letra.style.transition = "all 1s ease";
                     letra.style.transform = `translate(0px, 0px)`;
-                    setTimeout(() => {letra.style.transition = "all 0.2s ease"; quietas = false;}, 500);
+                    setTimeout(() => {letra.style.transition = "transform 0.2s ease, color 1s ease"; quietas = false;}, 500);
                 });
                 
                 flecha.style.opacity = "1";
