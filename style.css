@@ -27,6 +27,7 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
+    transition: all 1s ease;
     grid-template-columns: 1fr 150px;
     grid-template-rows: 48px 1fr 164px;
 }
