@@ -85,7 +85,7 @@ function main(rep, escTodo){
         asignar(aux, fib0, longitudUsada);
         cuenta++;
 
-        // Escribimos todos lo números si está el check marcado
+        // Escribimos todos los números si está el check marcado
         if (escTodo) {enviar(fib0, cuenta, longitudUsada);}
 
         // Actualizamos la barra cada 1000 iteraciones
